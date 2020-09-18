@@ -10,8 +10,7 @@ public class EmpApp {
 		EmpDao dao= new EmpDaoImpl();
 		EmpService service=new EmpService(dao);
 		
-		String resp=service.registerEmp(100, "James");
-		System.out.println(resp);
+		String resp=service.registerEmp(123, "Scott");
 
 	}
 
