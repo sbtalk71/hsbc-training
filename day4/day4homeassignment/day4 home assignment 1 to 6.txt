@@ -1,0 +1,12 @@
+1. Yes, there can be try block without catch block by using final 
+
+2. No, It is not possible to have catch block without try 
+
+3. No, we cannot use finally without a try block
+
+4.Yes, we can have try without catch block by using finally block
+
+5. No, it can be handled by different one also
+
+6.We can handle every exception if we reference the exception object to exception superclass
+
