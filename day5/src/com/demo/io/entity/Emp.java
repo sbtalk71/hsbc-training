@@ -1,10 +1,13 @@
 package com.demo.io.entity;
 
-public class Emp {
+import java.io.Serializable;
+
+public class Emp implements Serializable {
 	private int empId;
 	private String name;
 	private String city;
 	private double salary;
+	
 
 	public Emp() {
 
