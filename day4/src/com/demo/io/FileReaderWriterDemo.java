@@ -1,32 +1,33 @@
 package com.demo.io;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
-public class FileStreamDemo {
+public class FileReaderWriterDemo {
 
 	public static void main(String[] args) {
-		FileInputStream fis = null;
-		FileOutputStream fos = null;
-		BufferedInputStream bis=null;
-		BufferedOutputStream bos=null;
+		FileReader fis = null;
+		FileWriter fos = null;
+		BufferedReader bis = null;
+		BufferedWriter bos = null;
 		try {
 			File file = new File("d:\\temp\\io\\demo.txt");
-			fis = new FileInputStream(file);
-			fos = new FileOutputStream("demo_1.txt",true);
-			bis=new BufferedInputStream(fis);
-			bos=new BufferedOutputStream(fos);
+			fis = new FileReader(file);
+			fos = new FileWriter("demo_1.txt", true);
+			bis = new BufferedReader(fis);
+			bos = new BufferedWriter(fos);
 
 			int data = 0;
 			while ((data = bis.read()) != -1) {
 
 				System.out.print((char) data);
 				bos.write(data);
+				// bos.flush();
 			}
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found..");
@@ -35,19 +36,19 @@ public class FileStreamDemo {
 		} finally {
 			System.out.println("Finally..");
 			try {
-				if(bos!=null||bis!=null) {
-				
+				if (bos != null || bis != null) {
+
 					/*
 					 * fis.close(); fos.close();
 					 */
-				bis.close();
-				bos.close();
+					bis.close();
+					bos.close();
 				}
 			} catch (IOException e) {
 				System.out.println("Streams could not be closed : " + e);
 			}
-
 		}
+
 		System.out.println("End of task..");
 	}
 
