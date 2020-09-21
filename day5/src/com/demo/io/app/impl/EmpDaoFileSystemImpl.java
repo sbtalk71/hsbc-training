@@ -24,6 +24,7 @@ public class EmpDaoFileSystemImpl implements EmpDao {
 			while((line=br.readLine())!=null) {
 				if(line.contains(""+e.getEmpId())) {
 					message="Emp already exists";
+					//modify the code to throw EmpExistsException("message"), rethrow it to Service Layer (EmpService)
 					return message;
 				}
 			}
