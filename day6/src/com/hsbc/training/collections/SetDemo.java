@@ -1,16 +1,17 @@
 package com.hsbc.training.collections;
 
-import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Set;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class SetDemo {
 
 	public static void main(String[] args) {
 		//HashSet<String> names=new HashSet<String>();
-		//TreeSet<String> names=new TreeSet<>();
-		Set<String> names= new HashSet<>();
+		
+		SortedSet<String> names=new TreeSet<>();
+		
+		//Set<String> names= new HashSet<>();
 		names.add("Shantanu");
 		names.add("Kiran");
 		names.add("Arun");
