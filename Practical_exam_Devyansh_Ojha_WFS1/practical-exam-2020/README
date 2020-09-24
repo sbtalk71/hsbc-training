@@ -1,0 +1,9 @@
+The above project is describing the the three categories in a EveryDay Private Ltd. Shop
+
+Where every category is organized in different classes and then the opertion are done.
+
+Each of the operation is done through DAO where it includes
+DaoService layer
+DaoImplementation layer
+
+All the functionalities have to carried out at last by main function.
