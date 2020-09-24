@@ -1,7 +1,13 @@
+/**
+ * @author Muskan Karnani
+ * Implementation of interdface methpds for Food Items 
+ */
+
 package com.demo.app.impl;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -49,11 +55,23 @@ public class FoodItemsImpl implements DataStorage {
 	}
 	@Override
 	public void listAll() {
-	Collections.sort(FoodItems, items);
+		Comparator<FoodItems> compareByQty = new Comparator<FoodItems>() {
+		    @Override
+		    public int compare(FoodItems o1, FoodItems o2) {
+		        return (int)(o2.getQty()-o1.getQty());
+		        	
+		    }
+		};
+		int i=0;
+		Collections.sort(items, compareByQty);
+		
 		for(Object f: items)
 		{
+			i++;
 			FoodItems c=(FoodItems)f;
 			System.out.println(c.getItemCode()+" "+c.getName()+" "+c.getQty()+" "+c.getVeg());
+			if(i==3)
+				return;
 		}
 	}
 

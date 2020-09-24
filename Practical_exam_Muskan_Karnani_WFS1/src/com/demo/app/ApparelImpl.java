@@ -1,7 +1,14 @@
+/**
+ * @author Muskan Karnani
+ * Implementation of interdface methods for Apparel
+ */
 package com.demo.app;
 
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.List;
 
 import com.demo.app.entity.Apparel;
 import com.demo.app.entity.Electronics;
@@ -10,7 +17,7 @@ import com.demo.app.entity.FoodItems;
 public class ApparelImpl implements DataStorage {
 
 	//stores data of Apparel in LIST as test data
-	static Collection<Apparel> items =new LinkedList<Apparel>();
+	static List<Apparel> items =new LinkedList<Apparel>();
 	public ApparelImpl()
 	{
 		items.add((new Apparel(100,"Tshirt",20,"Large","Cotton",25)));
@@ -45,10 +52,22 @@ public class ApparelImpl implements DataStorage {
 
 	@Override
 	public void listAll() {
+		Comparator<Apparel> compareByQty = new Comparator<Apparel>() {
+		    @Override
+		    public int compare(Apparel o1, Apparel o2) {
+		        return (int)(o2.getQty()-o1.getQty());
+		        	
+		    }
+		};
+		int i=0;
+		Collections.sort(items, compareByQty);
 		for(Object f: items)
 		{
+			i++;
 			Apparel c=(Apparel)f;
 			System.out.println(c.getItemCode()+" "+c.getName()+" "+c.getQty()+" "+c.getSize()+" "+c.getMaterial());
+			if(i==3)
+				return;
 		}
 	}
 

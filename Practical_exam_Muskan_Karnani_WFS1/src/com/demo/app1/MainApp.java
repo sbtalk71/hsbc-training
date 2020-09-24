@@ -1,3 +1,8 @@
+/**
+ * @author Muskan Karnani
+ * Main VIEW LAYER  
+ */
+
 package com.demo.app1;
 
 import java.io.BufferedReader;
@@ -44,10 +49,10 @@ public class MainApp {
 			
 			dao=new ApparelImpl();
 			service=new Service(dao);
-			Apparel a=new Apparel(104,"Tshirt",20,"Large","Cotton",25);
+			Apparel a=new Apparel(10,"Tshirt",20,"Large","Cotton",25);
 			try {
 				dao.addNewItem(a);
-				dao.listAll();
+				dao.listAll();	
 				}catch(DuplicateItemException e)
 				{
 					throw new RuntimeException("Duplicate item!!");
