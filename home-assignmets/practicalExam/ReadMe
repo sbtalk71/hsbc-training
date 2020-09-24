@@ -1,0 +1,14 @@
+Data Access Layer
+-->Files
+ 	1.ProductDao.java		--->			Interface to give methods prototype to save and retrieve data from data layer
+ 	2.ProductDaoImplement.java	-->	Class implementing ProductDao interface
+ 	3.ItemExistException	.java	--->  		Custom checked exception to be checked before any new item is added prevent duplicate item id
+ 	
+ 	
+ Service Layer
+ -->Files
+ 	1.ProductService.java			--> 			Product category specific methods for saving and retrieving data
+ 	
+ UI layer
+ -->Files
+ 	1.UserInteraction.java				-->				Interacting with user; take input from console and show sales report on console based on category of product
