@@ -8,7 +8,7 @@ import com.hsbc.tr.app.impl.EmpDaoMapImpl;
 public class Main1 {
 
 	public static void main(String[] args) {
-		EmpDao dao=new EmpDaoMapImpl();
+		EmpDao dao=new EmpDaoListImpl();
 		
 		/*
 		 * Emp e=dao.findById(101); if(e==null) {

@@ -5,9 +5,9 @@ public class DuckDemo {
 		System.out.println(" not having fun...");
 	}
 	
-	public static void main(String[] args) /*throws Exception*/ {
+	public static void main(String[] args) throws Exception{
 		
-		//Class.forName("Duck");
+		Class.forName("Duck");
 		//Duck d1 = new Duck();
 		/*
 		 * Duck d1 = new Duck(); Duck d2 = new Duck(); Duck d3 = new Duck(); Duck d4 =

@@ -50,6 +50,21 @@ public class EmpDaoMapImpl implements EmpDao {
 			empDB.put(e.getEmpId(), e);
 			return "Emp Registered successfully";
 		}
+	}
 
+	public Emp updateName(int id, String name) throws EmpNotFoundException {
+
+		try {
+			if (empDB.containsKey(id)) {
+				Emp e1 = empDB.get(id);
+				e1.setName(name);
+				empDB.put(id, e1);
+				return e1;
+			} else {
+				throw new EmpNotFoundException();
+			}
+		} catch (EmpNotFoundException ex) {
+			throw ex;
+		}
 	}
 }

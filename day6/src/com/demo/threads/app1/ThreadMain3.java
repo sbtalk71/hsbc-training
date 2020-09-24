@@ -1,7 +1,5 @@
 package com.demo.threads.app1;
 
-import com.demo.threads.Worker;
-
 public class ThreadMain3 {
 
 	public static void main(String[] args) throws Exception{

@@ -1,19 +1,19 @@
 package com.hsbc.tr.app;
 
 import com.hsbc.tr.app.dao.EmpDao;
-import com.hsbc.tr.app.entity.Emp;
-import com.hsbc.tr.app.impl.EmpDaoListImpl;
-import com.hsbc.tr.app.impl.EmpDaoMapImpl;
+import com.hsbc.tr.app.impl.EmpDaoJdbcImpl;
 import com.hsbc.tr.app.service.EmpService;
 
 public class Main2 {
 
 	public static void main(String[] args) {
-		EmpDao dao = new EmpDaoMapImpl();
+		EmpDao dao = new EmpDaoJdbcImpl();
 
 		EmpService service = new EmpService(dao);
+		
 		try {
-			System.out.println(service.getEmpDetails(1010));
+			System.out.println(service.registerEmp(104, "Chetan", "Kochi", 89000));
+			//System.out.println(service.getEmpDetails(103));
 			
 		} catch (RuntimeException ex) {
 			System.out.println(ex.getMessage());
