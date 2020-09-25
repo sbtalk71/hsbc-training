@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Demo Form</title>
+<style type="text/css">
+h1 {
+	color: red;
+}
+body {
+background-color: lightblue;
+}
+
+input {
+background-color: yellow;
+}
+</style>
+</head>
+
+<body>
+	<h1>ABC Co Ltd.</h1>
+	<h1>Employee Registration Form</h1>
+	<hr>
+	
+	<form action="#" method="get">
+		<table>
+			<tr>
+				<td><label>First Name</label></td>
+				<td><input type="text" name="fname"></td>
+			</tr>
+			<tr>
+				<td><label>Last Name</label></td>
+				<td><input type="text" name="lname"></td>
+			</tr>
+			<tr>
+				<td><label>Location</label></td>
+				<td><select name="loc">
+						<option>Select City</option>
+						<option value="hyderabad">Hyderabad</option>
+						<option>Bangalore</option>
+						<option>Chennai</option>
+						<option>Bhopal</option>
+						<option>Vizag</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label>Hobby</label></td>
+				<td><input type="checkbox" name="hobby" value="reading">Reading
+					<input type="checkbox" name="hobby" value="painting">Painting
+					<input type="checkbox" name="hobby" value="fighting">Fighting
+					<input type="checkbox" name="hobby" value="screaming">Screaming</td>
+			</tr>
+			<tr>
+				<td><label>Gender</label></td>
+				<td><input type="radio" name="gender" value="male"
+					checked="checked">Male <input type="radio" name="gender"
+					value="female">Female</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit Data"></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

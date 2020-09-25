@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="demo.js"></script>
+<script type="text/javascript">
+	function warn() {
+		alert("Warn Funtion called...");
+	}
+	
+	function fun(){
+		alert("This is actual fun..")
+	}
+	function greet(){
+		fun();
+		//for(let i=0;i<10;i++){
+			let i=0;
+			while(i<10){
+			var prevText=document.getElementById("d1").innerHTML;
+			document.getElementById("d1").innerHTML=prevText+"<h2>welcome "+i+"</h2><br/>";
+			//document.write("<h2>welcome "+i+"</h2><br/>");
+			i++;
+		}
+	}
+</script>
+</head>
+<body>
+
+<h1 id="t">This is a Demo Text</h1>
+<div id="d1"></div>
+
+<button onclick="changeColor()">Change Text Color</button>
+<button onclick="greet()">Greet</button>
+</body>
+</html>

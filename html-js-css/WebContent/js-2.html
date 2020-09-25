@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function updateDiv() {
+
+		document.getElementById("d1").innerHTML = document.getElementById("t1").value;
+	}
+
+	function addRow() {
+		alert("hi")
+		var text = document.getElementById("t1").value;
+		prevTbl = document.getElementById("tbl").innerHTML;
+		document.getElementById("tbl").innerHTML = prevTbl + "<tr><td>" + text
+				+ "</td></tr>";
+	}
+
+	function displayAlert() {
+		try {
+			showAlert("I am for Error");
+
+		} catch (err) {
+			document.getElementById("error").innerHTML = err.message;
+			throw err;
+		}
+	}
+	
+	function display(){
+		try{
+			displayAlert()
+			
+		}catch (e) {
+			document.getElementById("error1").innerHTML = "caught rethrown error "+e.message;
+		}
+	}
+</script>
+</head>
+<body>
+	Enter Text :
+	<input type="text" id="t1" onkeyup="updateDiv()">
+	<input type="text" id="t2" onfocus="alert('focus')"
+		onblur="alert('focus lost')">
+	<br />
+	<br />
+	<button onclick="updateDiv()">Update Text</button>
+	<button onclick="addRow()">Add Row</button>
+	<button onclick="display()">Show Alert</button>
+	<div id="d1"></div>
+
+	<table id="tbl" border="1">
+
+	</table>
+
+	<div id="error" style="color: red"></div>
+	<div id="error1" style="color: red"></div>
+
+</body>
+</html>

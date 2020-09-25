@@ -1,0 +1,22 @@
+
+
+
+ol {
+	font-size: 20px;
+	color: red;
+	font-style: bold;
+}
+
+ul {
+	font-size: 30px;
+	color: green;
+	font-style: bold;
+}
+
+table,tr,td{
+	border-collapse: collapse;
+	border: 5px solid red;
+	
+}
+
+
