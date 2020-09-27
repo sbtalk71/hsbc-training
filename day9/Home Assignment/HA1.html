@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var myObj, i, x = "";
+myObj = {
+  "	custId":["323","313","212","545","543"],
+  "custName":["Dev","Nick","Roy","Jack","Span"],
+  "address":[ "Luknow","Basti","Noida","Banglore","Delhi" ],
+  "accountBalance":["10000","20000","30000","40000","50000"]
+};
+
+for (i in myObj.custName) {
+  x += myObj.custName[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

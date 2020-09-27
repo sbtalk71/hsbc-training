@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function myFunction() {
+		var x1 = document.getElementById("myText1").value;
+		var p=document.getElementById("demo1").innerHTML
+		document.getElementById("demo1").innerHTML = p+ "<tr><td>" +x1 + "</td></tr>";
+
+	}
+</script>
+</head>
+<body style="text-align: center;">
+	<h1 style="color: green;">Welcome to JS</h1>
+
+	TEXT:
+	<input type="text" id="myText1">
+
+	<button type="button" onclick="myFunction()">Click it</button>
+
+	<table id="demo1">
+
+	</table>
+
+
+
+</body>
+</html>

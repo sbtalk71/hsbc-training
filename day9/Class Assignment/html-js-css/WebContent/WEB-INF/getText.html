@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Get Text</title>
+<script type="text/javascript">
+	function getInputValue() {
+		document.getElementById("myInput").innerHTML = document.getElementById("t").value;
+
+	}
+</script>
+</head>
+<body>
+
+
+	<input type="text" placeholder="Type text" id="t">
+	<button type="button" onclick="getInputValue();">Get Value</button>
+
+	<div id="myInput"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function warn() {
+		alert("The page loaded");
+	}
+
+	function greet() {
+		for (let i = 0; i < 10; i++) {
+			var prevText = document.getElementById("d1").innerHTML;
+			document.getElementById("d1").innerHTML = prevText + "Welcome " + i
+					+ "</h2> <br>";
+			//document.write("Welcome " + i + "</h2> <br>");
+		}
+	}
+</script>
+
+</head>
+<body onload="greet()">
+
+	<div id="d1"></div>
+<button onclick="changeColor()">BUTTON</button>
+</body>
+
+</html>
