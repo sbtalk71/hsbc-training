@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>servlets-app</display-name>
+	<!-- <welcome-file-list> <welcome-file>index.html</welcome-file> <welcome-file>index.htm</welcome-file> 
+		<welcome-file>index.jsp</welcome-file> <welcome-file>default.html</welcome-file> 
+		<welcome-file>default.htm</welcome-file> <welcome-file>default.jsp</welcome-file> 
+		</welcome-file-list> -->
+
+	<servlet>
+		<servlet-name>demo</servlet-name>
+		<servlet-class>com.hsbc.tr.web.Servlet1</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>demo</servlet-name>
+		<url-pattern>/test1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>demo2</servlet-name>
+		<servlet-class>com.hsbc.tr.web.Form1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>demo2</servlet-name>
+		<url-pattern>/test2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>demo3</servlet-name>
+		<servlet-class>com.hsbc.tr.web.ProcessInputServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>demo3</servlet-name>
+		<url-pattern>/test3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>demo4</servlet-name>
+		<servlet-class>com.hsbc.tr.web.Sum</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>demo4</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>home1</servlet-name>
+		<servlet-class>com.hsbc.tr.web.homework.Message</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>home1</servlet-name>
+		<url-pattern>/message</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>home2</servlet-name>
+		<servlet-class>com.hsbc.tr.web.homework.Methods</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>home2</servlet-name>
+		<url-pattern>/methods</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>emailss</servlet-name>
+	<servlet-class>com.hsbc.tr.web.homework.SendEmail</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>emailss</servlet-name>
+	<url-pattern>/emailss</url-pattern>
+	</servlet-mapping>
+</web-app>
