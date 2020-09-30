@@ -1,0 +1,48 @@
+<html>
+ 
+<head>
+  <title>XYZ Corporation, IT Department</title>
+</head>
+  <body>
+    <h1>Technical Support Request</h1>
+    <hr><br>
+   
+      <form action="register" method="POST">
+        <table align="center" width="100%" cellspacing="2" cellpadding="2">
+          <tr>
+            <td align="right">Email:</td>
+            <td><input type="text" name="email" align="left" 
+                       size="25"></td>
+          </tr>
+          <tr>
+            <td align="right">Software:</td>
+            <td>
+              <select name="software" size="1">
+                <option value="Word">Microsoft Word</option>
+                <option value="Excel">Microsoft Excel</option>
+                <option value="Access">Microsoft Access</option>
+              </select>
+            </td>
+            <td align="right">Operating System:</td>
+            <td>
+              <select name="os" size="1">
+                <option value="2000">Windows 2000</option>
+                <option value="xp">Windows xp</option>
+                <option value="linux">Linux</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+
+        <br>Problem Description
+        <br>
+        <textarea name="problem" cols="50" rows="4"></textarea>
+ 
+        <hr><br>
+        <input type="hidden" name="action" value="addRequest" >
+        <input type="submit" name="submit" value="Submit Request">
+      </form>
+  <br/>
+  <a href="listrequets">List all Requests</a>
+  </body>
+</html>
