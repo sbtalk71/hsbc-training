@@ -65,5 +65,10 @@ public class Emp {
 		return this.getEmpId();
 	}
 	
+	@Override
+	public String toString() {
+		
+		return empId+" "+name+" "+city+" "+salary;
+	}
 	
 }
