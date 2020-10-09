@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emp xmlns="http://www.example.org/emp"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/emp emp.xsd ">
+	<empId>0</empId>
+	<name>tns:name</name>
+	<name>tns:name</name>
+	<city>tns:city</city>
+	<salary>0.0</salary>
+</emp>

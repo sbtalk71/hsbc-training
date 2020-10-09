@@ -5,18 +5,19 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="message1" class="com.hsbc.tr.spring.Message">
+	<!-- <bean id="message1" class="com.hsbc.tr.spring.Message">
 		<property name="header" value="Tea Break" />
 		<property name="body" value="Tea Break at 3:45pm" />
-	</bean>
-	<bean id="message" class="com.hsbc.tr.spring.Message">
+	</bean> -->
+	<bean id="message2" class="com.hsbc.tr.spring.Message">
 		<property name="header" value="Final Break" />
 		<property name="body" value="Final Break at 5:30pm" />
 	</bean>
 
-	<bean id="myMail" class="com.hsbc.tr.spring.Mail" autowire="byName">
+	<bean id="myMail" class="com.hsbc.tr.spring.Mail" autowire="byType">
 		<property name="toAddress" value="abc@gmail.com" />
 		<property name="fromAddress" value="xyz@gmail.com" />
+		<!-- <property name="message" ref="message"/> -->
 		
 	</bean>
 </beans>
