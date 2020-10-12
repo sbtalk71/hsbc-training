@@ -4,7 +4,6 @@
 	xsi:schemaLocation="http://www.example.org/emp emp.xsd ">
 	<empId>0</empId>
 	<name>tns:name</name>
-	<name>tns:name</name>
 	<city>tns:city</city>
 	<salary>0.0</salary>
 </emp>
