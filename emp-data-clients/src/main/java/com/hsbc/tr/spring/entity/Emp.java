@@ -10,7 +10,7 @@ public class Emp {
 	private double salary;
 
 	public Emp() {
-		System.out.println("Emp Created...");
+		
 	}
 
 	public Emp(int empId, String name, String city, double salary) {
@@ -25,17 +25,14 @@ public class Emp {
 	}
 
 	public void setEmpId(int empId) {
-		System.out.println("Emp Id is set...");
 		this.empId = empId;
 	}
 
 	public String getName() {
-		
 		return name;
 	}
 
 	public void setName(String name) {
-		System.out.println("Emp Name is set...");
 		this.name = name;
 	}
 
@@ -44,7 +41,6 @@ public class Emp {
 	}
 
 	public void setCity(String city) {
-		System.out.println("Emp City is set...");
 		this.city = city;
 	}
 
@@ -53,7 +49,6 @@ public class Emp {
 	}
 
 	public void setSalary(double salary) {
-		System.out.println("Emp Salary is set...");
 		this.salary = salary;
 	}
 
