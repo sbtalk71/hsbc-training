@@ -1,0 +1,12 @@
+
+<div *ngIf="listFlag ; then listData"></div>
+
+<ng-template #listData>
+    <ul>
+
+        <li *ngFor="let s of names">{{s}}</li>
+
+    </ul>
+</ng-template>
+
+<button (click)="setFlag()">{{btnValue}}</button>
