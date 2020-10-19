@@ -6,12 +6,14 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
+@CrossOrigin()
 public class HrController {
 
 	@Autowired
@@ -26,7 +28,7 @@ public class HrController {
 		// http Body
 		HttpEntity httpRequest = new HttpEntity<>(headers);
 
-		ResponseEntity<String> response2 = rt.exchange("http://localhost:8080/emp/find/" + empId, HttpMethod.GET,
+		ResponseEntity<String> response2 = rt.exchange("http://emp-service/emp/find/" + empId, HttpMethod.GET,
 				httpRequest, String.class);
 		return response2;
 	}
