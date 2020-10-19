@@ -1,0 +1,16 @@
+<h1>Posts List</h1>
+<hr>
+<table>
+    <tr>
+        <th>User Id</th>
+        <th>Post Id</th>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor="let post of posts|slice:0:count">
+        <td>{{post.userId}}</td>
+        <td>{{post.id}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.body}}</td>
+    </tr>
+</table>

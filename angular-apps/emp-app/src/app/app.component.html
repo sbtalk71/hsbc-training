@@ -1,0 +1,8 @@
+<div>
+    <h1>Data Received From Chiled</h1>
+    <h2>{{childData}}</h2>
+</div>
+
+<app-child [parentData]="message" (childEvent)="childData=$event"></app-child>
+
+<app-emp-json></app-emp-json>

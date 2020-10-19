@@ -1,0 +1,5 @@
+<h1>Emp Id List</h1>
+<ul>
+<li *ngFor="let emp of empList" (click)="findEmp(emp.empId)">{{emp.empId}}</li>
+
+</ul>
