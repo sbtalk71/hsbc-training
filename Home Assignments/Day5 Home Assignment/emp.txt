@@ -1,0 +1,3 @@
+105,Krishna,Pune,80000.0
+107,Muskan,Lucknow,90000.0
+108,Riya,Hyderabad,70000.0

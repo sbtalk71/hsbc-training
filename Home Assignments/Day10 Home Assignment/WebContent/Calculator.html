@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculator</title>
+<script type="text/javascript">
+function validate()
+{
+	if((document.getElementById("n1").innerHTML.value==null)||(document.getElementById("n2").innerHTML.value==null))
+		alert("Empty box!!");
+	else return;
+	}
+
+</script>
+</head>
+<body>
+<form method="post" action="calculate" onclick="validate()">
+<table>
+<tr>
+<td>Enter the first number</td>
+<td><input id="n1" type="text" name="num1"></td>
+</tr>
+<tr>
+<td>Enter the second number</td>
+<td><input id="n2" type="text" name="num2"></td>
+</tr>
+<tr>
+<td><input type="submit" name="operation" value="add"></td>
+<td><input type="submit" name="operation" value="subtract"></td>
+<td><input type="submit" name="operation" value="multiply"></td>
+<td><input type="submit" name="operation" value="divide"></td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>

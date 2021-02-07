@@ -1,0 +1,2 @@
+Reference is basically an entity which provides a way to access the object of its type WHEREAS An Object is an entity which provides a way to access the members of its class or types.
+We cannot access an object without its reference.

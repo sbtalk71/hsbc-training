@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+form{
+	align-content: center;
+	width: 300px;
+    margin: 0 auto;
+}
+#id1,#id2,#id3{
+	border-color: blue;	
+	
+}
+h1,h2{
+	color: green;
+	font-style: vardana;
+	align-content: center;
+	width: 400px;
+    margin: 0 auto;
+}

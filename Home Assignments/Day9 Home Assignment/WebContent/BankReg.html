@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript">
+function show()
+{
+	alert(document.getElementById("id1").value+document.getElementById("id2").value+document.getElementById("id3").value+document.getElementById("id4").value+document.getElementById("id6").value)
+	}
+	
+function validateform()
+{
+
+    var name = document.getElementById("id1");               
+    var password =document.getElementById("id2")
+        var email = document.getElementById("id3")   
+
+   
+    if (name.value == "" )                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+   
+   
+       
+    if (email.value == "" )                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    } 
+   
+   
+    return true;
+	
+	  
+}
+	
+</script>
+</head>
+<body>
+<hr>
+<h1>Welcome to ABC Bank</h1>
+<h2>Customer Registration Form</h2>
+<br/>
+	<hr>
+	
+	<form  name="myform" method="post"  onsubmit="return validateform()" action="#" >
+<label>Enter Name:</label><input id="id1" type="text" value="name" ><br/>
+<label>Enter password:</label><input id="id2" type="password" value="password" ><br/>
+<label>Enter Email:</label><input id="id3" type="text" value="email" ><br/>
+<input id="id4" type = "radio" name = "gender" value = "male" checked="checked"> Male
+<input type = "radio" name = "gender" value = "female"> Female<br/>
+<label>Select Country:</label><select id="id6" name = "dropdown">
+            <option value = "India" selected>India</option>
+            <option value = "US">US</option>
+            
+         </select><br/>
+<input  onclick="show();" "margin-left: 200px" type = "submit" name = "submit" value = "register" >
+</form>
+</body>
+</html>

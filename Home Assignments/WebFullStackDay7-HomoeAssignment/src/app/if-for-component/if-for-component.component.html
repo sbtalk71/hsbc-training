@@ -1,0 +1,11 @@
+<h1 style="text-align: center;">
+  The details of employees whose salary is greater than 50000 is:
+</h1><table style="margin-left: auto;
+margin-right: auto;">
+  <tr  *ngFor="let emp of empList">
+      <td *ngIf="emp.salary > 50000">{{emp.empId}}</td>
+      <td *ngIf="emp.salary > 50000">{{emp.name}}</td>
+      <td *ngIf="emp.salary > 50000">{{emp.city}}</td>
+      <td *ngIf="emp.salary > 50000">{{emp.salary}}</td>
+  </tr>
+</table>

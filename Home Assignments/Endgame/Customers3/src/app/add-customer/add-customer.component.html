@@ -1,0 +1,16 @@
+<h2>Enter customer id</h2>
+<br>
+<input type="number" name="customerId" value="" #inputId>
+<br>
+<h2>Enter customer name</h2>
+<br>
+<input type="text" name="customerName" value="" #inputName>
+<br>
+<h2>Enter customer mobile no.</h2>
+<br>
+<input type="text" name="mobile" value="" #inputMobile>
+<br>
+<br>
+<button (click)="addCustomer(inputId.value,inputName.value,inputMobile.value)">Add</button>
+<br>
+<h2>{{status}}</h2>
