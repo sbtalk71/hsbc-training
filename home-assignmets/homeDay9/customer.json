@@ -1,0 +1,34 @@
+{
+	"customer": [
+		{
+			"address": "Pune",
+			"custId": 201,
+			"accountBalance": 23000,
+			"custName": "Name0"
+		},
+		{
+			"address": "Pune",
+			"custId": 201,
+			"accountBalance": 23000,
+			"custName": "Name1"
+		},
+		{
+			"address": "Pune",
+			"custId": 201,
+			"accountBalance": 23000,
+			"custName": "Name2"
+		},
+		{
+			"address": "Pune",
+			"custId": 201,
+			"accountBalance": 23000,
+			"custName": "Name3"
+		},
+		{
+			"address": "Pune",
+			"custId": 201,
+			"accountBalance": 23000,
+			"custName": "Name4"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+<h1>Enter details of new customer:</h1>
+Enter id <input type="text" name="id" #custId><br>
+Enter Name <input type="text" name="name" #custName><br>
+Enter mobile <input type="text" name="mobile" #custMobile><br>
+
+<button (click)="saveCust(custId.value, custName.value, custMobile.value)">Save </button>
+
+<br>
+<br>
+<h3>Output : {{output}}</h3>
