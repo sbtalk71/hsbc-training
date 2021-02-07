@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+.myDiv {
+	border: 5px outset red;
+	background-color: lightblue;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div class="myDiv">
+		<form action="Register" method="post">
+			<h1 align="center">Welcome to ABC Bank</h1>
+			<h2 align="center">Customer Registration Form</h2>
+
+
+			Name:<input type="text" name="userName" /><br /> <br /> Password:<input
+				type="password" name="userPass" /><br /> <br /> Email Id:<input
+				type="text" name="userEmail" /><br /> 
+				Gender:<input type="radio"	id="male" name="userGender" value="male"> 
+				<label for="male">Male</label>
+			   <input type="radio" id="female" name="userGender" value="female">
+			     <label for="female">Female</label><br>
+			 <br /> Country: <select
+				name="userCountry">
+				<option>India</option>
+				<option>Pakistan</option>
+				<option>China</option>
+
+				<option>others</option>
+			</select> <br /> <br /> <input type="submit" value="register" />
+
+		</form>
+	</div>
+</body>
+</html>
