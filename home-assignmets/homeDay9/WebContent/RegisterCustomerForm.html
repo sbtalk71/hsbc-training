@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form to register customer</title>
+<style type="text/css">
+h1, h2 {
+	color: green;
+	font-family: verdana;
+}
+
+.content {
+	max-width: 500px;
+	margin: auto;
+}
+
+input, select {
+	border: 1px solid blue;
+}
+
+table {
+	padding: 10px;
+}
+
+td {
+	padding: 2px;
+}
+</style>
+
+<script type="text/javascript">
+	function validateForm() {
+		var nm = document.forms["myForm"]["name"].value;
+		var pwd = document.forms["myForm"]["password"].value;
+		var email=document.forms["myForm"]["email"].value;
+		var cntry=document.forms["myForm"]["country"].value;
+		var gndr=document.forms["myForm"]["gender"].checked;
+		if (nm.length >2 && pwd.length>7 && email!='') {
+			text='{"Customer" : [ {"Name" : "'+nm+'"},{"Email" : "'+email+'"},{"Country": "'+ cntry+'"},{"Gender": "'+gndr+'"}]}';
+			var obj=JSON.parse(text);
+			alert(text);
+		}
+		else{
+				alert("Please enter valid data entries!");
+		}
+		
+		return false;
+
+	}
+	
+</script>
+</head>
+<body>
+	<div class="content">
+		<hr>
+
+		<h1>Welcome to ABC Bank</h1>
+		<h2>Customer Registration Form</h2>
+
+		<hr>
+
+		<form name="myForm" action=# method="POST"
+			onsubmit="return validateForm()">
+			<table>
+				<tr>
+					<td><label>Enter name</label></td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td><label>Enter password</label></td>
+					<td><input type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td><label>Enter email</label></td>
+					<td><input type="email" name="email"></td>
+				</tr>
+				<tr>
+					<td><label>Enter Gender</label></td>
+					<td><input type="radio" name="gender"  id="gender" value="Male">Male
+						&nbsp; <input type="radio" name="gender" id="gender" value="Female">Female
+					</td>
+				</tr>
+				<tr>
+					<td><label>Select Country</label></td>
+					<td><select name="country">
+							<option>India</option>
+							<option>China</option>
+							<option>UK</option>
+							<option>USA</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center"><input type="submit"
+						value="Register"></td>
+				</tr>
+			</table>
+		</form>
+
+	</div>
+</body>
+</html>

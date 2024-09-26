@@ -1,0 +1,22 @@
+<label>Enter customer id to find:</label>
+<input type="text" name="custId" #customerId><br>
+<button (click)="getCustDetails(customerId.value)">Search Customer</button>
+
+
+<h2>Customer Details</h2>
+
+<table>
+<tr>
+    <td>Customer id</td>
+    <td>{{c1.customerId}}</td>
+</tr>
+<tr>
+    <td>Customer name</td>
+    <td>{{c1.customerName}}</td>
+</tr>
+<tr>
+    <td>Mobile</td>
+    <td>{{c1.mobile}}</td>
+</tr>
+</table>
+

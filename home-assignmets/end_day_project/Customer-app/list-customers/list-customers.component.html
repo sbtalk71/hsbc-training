@@ -1,0 +1,13 @@
+<h1>Customers List</h1>
+<table>
+    <tr>
+        <td>Customer Id</td>
+        <td>Customer Name</td>
+        <td>Mobile</td>
+    </tr>
+    <tr *ngFor="let c of custList">
+        <td>{{c.customerId}}</td>
+        <td>{{c.customerName}}</td>
+        <td>{{c.mobile}}</td>
+    </tr>
+</table>
