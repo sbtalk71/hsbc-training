@@ -1,0 +1,3 @@
+The definition of metadata is "data about other data." With a file system, the data is contained in its files and directories, and the metadata tracks information about each of these objects: Is it a regular file, a directory, or a link? What is its size, creation date, last modified date, file owner, group owner, and access permissions?
+
+A file system's metadata is typically referred to as its file attributes. The Files class includes methods that can be used to obtain a single attribute of a file, or to set an attribute.
